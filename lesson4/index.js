@@ -1,9 +1,10 @@
 const n = 133;
 let m = 1
-let sum = 0;
+let result = 0;
 
 while (m < n) {
-    sum += m;
+    result += m;
     m++;
 }
+let sum = result;
 console.log('Result: ' + sum)
