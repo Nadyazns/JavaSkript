@@ -5,6 +5,5 @@ let sum = 0;
 while (m < n) {
     sum += m;
     m++;
+    console.log('Result: ' + sum);
 }
-
-console.log('Result: ' + sum)
