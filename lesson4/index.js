@@ -6,5 +6,5 @@ while (m < n) {
     result += m;
     m++;
 }
-let sum = result;
+const sum = result;
 console.log('Result: ' + sum)
