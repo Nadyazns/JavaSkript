@@ -1,5 +1,5 @@
 const n = 133;
-let m = 1;
+let m = 0;
 let sum = 0;
 
 while (m < n) {
