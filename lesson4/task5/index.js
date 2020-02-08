@@ -1,17 +1,19 @@
-const m = 1;
-let a = m;
-const n = 5;
+const m = 5;
+let i = m;
+const n = 17;
+let result = 1;
 
-let result = 0;
-for (let i = a; i <= n; i++) {
+for (i = 5; i <= n; i++) {
     if (i % 2 === 0 && i % 4 != 0) {
         result += i;
+
     } else if (i % 3 == 0) {
         result -= i;
+
     } else if (i % 4 == 0) {
         result *= i;
-    }
-    while (i % 5 == 0) {
+
+    } else if (i % 5 == 0) {
         console.log(i)
     }
 }
