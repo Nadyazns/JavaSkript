@@ -1,7 +1,7 @@
 const m = 2;
 let i = m;
 const n = 12;
-let result = 1;
+let result = 0;
 
 for (i = m; i <= n; i++) {
     if (i % 2 == 0 && i % 4 != 0) {
@@ -9,7 +9,7 @@ for (i = m; i <= n; i++) {
     } else if (i % 3 === 0) {
         result -= i;
     } else if (i % 4 === 0) {
-        result *= 0;
+        result *= i;
     }
     if (i % 5 === 0) {
         console.log(i);
