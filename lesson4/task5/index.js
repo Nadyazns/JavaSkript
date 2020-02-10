@@ -1,11 +1,12 @@
-const m = 5;
+const m = 2;
 let i = m;
-const n = 25;
-let result = 1;
+const n = 12;
+let result = 0;
 
 while (i <= n && i >= m) {
     if (i % 5 == 0) {
-        console.log(i)
+        console.log(i);
+
     } else if (i % 2 == 0 && i % 4 != 0) {
         result += i;
 
@@ -17,5 +18,5 @@ while (i <= n && i >= m) {
 
     }
     i++;
-    continue;
+
 }
