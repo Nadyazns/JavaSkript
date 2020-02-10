@@ -11,5 +11,8 @@ for (i = m; i <= n && i >= m; i++) {
     } else if (i % 4 === 0) {
         console.log(result *= 0)
     }
+    if (i % 5 === 0) {
+        console.log(i);
+    }
 
 }
