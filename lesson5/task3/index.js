@@ -1,5 +1,5 @@
 function getEvenOdd(num) {
-    if (a % 2 === 0) {
+    if (num % 2 === 0) {
         return 'even';
     } else {
         return 'odd'
