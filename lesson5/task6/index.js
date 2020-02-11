@@ -1,6 +1,6 @@
 function getPrimes(num) {
-    for (num = 1; num < 10; num++) {
-        console.log(num);
+    for (let i = 1; i <= num; i++) {
+        console.log(i);
 
     }
 
