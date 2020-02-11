@@ -11,3 +11,4 @@ function compareSums(a, b, c, d) {
     if (sum(a, b) > sum(b, c)) return true;
     return false;
 }
+compareSums(2, 5, 1, 4)
