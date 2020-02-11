@@ -1,7 +1,7 @@
 function sum(from, to) {
     let total = 0;
-    for (let a = from; a <= to; a++) {
-        total += a;
+    for (let i = from; i <= to; i++) {
+        total += i;
     }
     console.log(total)
 }
