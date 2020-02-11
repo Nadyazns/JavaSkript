@@ -8,5 +8,6 @@ function sum(from, to) {
 
 
 function compareSums(a, b, c, d) {
-    return Boolean(sum(a, b) > sum(c, d));
+    if (sum(a, b) > sum(b, c)) return true;
+    return false;
 }
