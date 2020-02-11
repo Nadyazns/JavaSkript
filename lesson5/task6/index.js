@@ -5,3 +5,4 @@ function getPrimes(num) {
     }
 
 }
+getPrimes(9);
