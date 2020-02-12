@@ -3,10 +3,16 @@ function sum(from, to) {
     for (let i = from; i <= to; i++) {
         total += i;
     }
-    console.log(total)
+    return total;
 }
+
 
 
 function compareSums(a, b, c, d) {
-    return Boolean((sum(a, b) > sum(c, d)))
+    if (sum(a, b) > sum(c, d)) {
+        return true;
+    } else {
+        return false;
+    }
 }
+compareSums(2, 9, 1, 2)
