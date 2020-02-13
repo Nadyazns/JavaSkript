@@ -7,7 +7,7 @@ const arrayName = [1, 2, 3, 9]
 
 function getSum(arrayName) {
     let sum = 0;
-    if (!Array.isArray) {
+    if (!Array.isArray(arrayName)) {
         return null;
     }
     for (let i = 0; i < arrayName.length; i++) {
