@@ -7,10 +7,9 @@ const arrayName = [1, 2, 3]
 
 function getSum(arrayName) {
     let sum = 0;
-    if (!Array.toString) {
+    if (!Array.isArray) {
         return null;
     }
-
     for (i = 0; i < arrayName.length; i++) {
         sum += arrayName[i];
     }
