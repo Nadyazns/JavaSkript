@@ -1,4 +1,4 @@
-//const arrName = [10, 2, 3, 4, 5];
+const arrName = [10, 2, 3, 4, 5];
 let square = [];
 
 function squareArray(arr) {
@@ -17,5 +17,5 @@ function squareArray(arr) {
     return square;
 }
 
-//const show = squareArray(arrName);
-//console.log(show)
+const show = squareArray(arrName);
+console.log(show)
