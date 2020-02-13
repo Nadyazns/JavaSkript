@@ -1,5 +1,5 @@
 //const arrName = [10, 2, 3, 4, 5];
-//let square = [];
+let square = [];
 
 function squareArray(arr) {
 
