@@ -10,7 +10,7 @@ function squareArray(arr) {
         num = arr[i];
 
         if (num != 0) {
-            square.push(arr[i] * arr[i]);
+            square.push(num * num);
         }
 
     }
