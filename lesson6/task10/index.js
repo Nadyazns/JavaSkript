@@ -1,5 +1,5 @@
-const clients = ['John', 'Nadya', 'Bob'];
-let balances = [23000, 24500, 12000];
+//const clients = ['John', 'Nadya', 'Bob'];
+//let balances = [23000, 24500, 12000];
 
 
 function withdraw(clients, balances, client, amount) {
@@ -19,4 +19,4 @@ function withdraw(clients, balances, client, amount) {
 }
 
 
-console.log(withdraw(clients, balances, 'Nadya', 500))
+//console.log(withdraw(clients, balances, 'Nadya', 500))
