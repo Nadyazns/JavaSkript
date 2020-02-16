@@ -8,12 +8,14 @@ function checker(arr) {
         if (arr[i] > max) max = arr[i];
 
     }
-    for (i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] < min) min = arr[i];
 
     }
-    if (min + max < 1000)
+    sum = min + max;
+    if (sum > 1000) {
         return false;
+    }
     return true;
 }
 //console.log(checker(balances))
