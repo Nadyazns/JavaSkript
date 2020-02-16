@@ -14,8 +14,8 @@ function checker(arr) {
     }
     sum = min + max;
     if (sum > 1000) {
-        return false;
+        return true;
     }
-    return true;
+    return false;
 }
 //console.log(checker(balances))
