@@ -1,4 +1,4 @@
-const myArray = [1, 67, 45, 23, 7, 34, 68, 2444];
+//const myArray = [1, 67, 45, 23, 7, 34, 68, 2444];
 
 function cloneArr(arr) {
     let clone = [];
@@ -7,4 +7,4 @@ function cloneArr(arr) {
 }
 
 
-console.log(cloneArr(myArray));
+//console.log(cloneArr(myArray));
