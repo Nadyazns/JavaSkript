@@ -2,8 +2,8 @@
 
 
 const sortDesc = numbers => {
-    const copy = numbers.slice();
-    numbers.sort((a, b) => b - a);
+    const copy = numbers.slice(); //[...numbers] кпирует все из numbers
+    copy.sort((a, b) => b - a);
     return copy;
 }
 
@@ -12,7 +12,7 @@ const sortDesc = numbers => {
 
 // const sortArray = numbers => {
 //     function compare(a, b) {
-//         if (a > b) {
+//         if (a < b) {
 //             return 1;
 //         }
 //         return -1;
@@ -23,4 +23,4 @@ const sortDesc = numbers => {
 
 const arr = [4, 92387, 2727, 1, 0, 377, 12]
 console.log(sortDesc(arr));
-console.log(arr)
+console.log(arr);
