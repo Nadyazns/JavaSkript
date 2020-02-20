@@ -21,6 +21,6 @@ const sortDesc = numbers => {
 //     return numbers;
 // };
 
-// const arr = [4, 92387, 2727, 1, 0, 377, 12]
-// console.log(sortDesc(arr));
-// console.log(arr)
+const arr = [4, 92387, 2727, 1, 0, 377, 12]
+console.log(sortDesc(arr));
+console.log(arr)
