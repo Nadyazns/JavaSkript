@@ -1,11 +1,15 @@
 // unsorted array => sorted array
+// упрощенная копия
+const sortDesc = numbers =>
+    numbers.slice().sort((a, b) => b - a);
 
 
-const sortDesc = numbers => {
-    const copy = numbers.slice(); //[...numbers] кпирует все из numbers
-    copy.sort((a, b) => b - a);
-    return copy;
-}
+
+// const sortDesc = numbers => {
+//     const copy = numbers.slice(); //[...numbers] кпирует все из numbers
+//     copy.sort((a, b) => b - a);
+//     return copy;
+// }
 
 
 
