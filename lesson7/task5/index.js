@@ -14,6 +14,6 @@ function squareArray(arr) {
 }
 
 
-arr = [2, 5, 7, 9]
-console.log(squareArray(arr))
-console.log(arr)
+// arr = [2, 5, 7, 9]
+// console.log(squareArray(arr))
+// console.log(arr)
