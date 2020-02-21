@@ -13,6 +13,8 @@ function squareArray(arr) {
     return square;
 }
 
+// const squareArray = arr => arr
+// .forEach(num => num*=num).push(num);
 
 // arr = [2, 5, 7, 9]
 // console.log(squareArray(arr))
