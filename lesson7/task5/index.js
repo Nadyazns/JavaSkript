@@ -1,4 +1,4 @@
-const squareArray = arr => {
+function squareArray(arr) {
     const square = [];
     if (!Array.isArray(arr)) {
         return null;
