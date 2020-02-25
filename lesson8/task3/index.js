@@ -19,7 +19,7 @@ const pickProps = (obj, arr) => {
     return myObj;
 }
 
-console.log(pickProps(obj, arr));
+//console.log(pickProps(obj, arr));
 
 
 // const baseObject = { xml: 4, http: 2, rest: 2, js: 10 };
