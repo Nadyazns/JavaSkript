@@ -20,12 +20,12 @@ const user = {
 const getCustomersList = obj => {
     const list = Object.entries(obj);
     console.log(list);
-    for (let key in user) {
-        let objId = Object.assign({}, user[key]);
+    let objId = {};
+    for (let key in obj) {
+        objId = {...obj[key] };
         objId.id = key;
         console.log(objId)
     };
-    console.log(objId)
 };
 
 console.log(getCustomersList(user))
