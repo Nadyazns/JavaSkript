@@ -1,10 +1,10 @@
 let len = null;
 
 
-function createEmptyArr(len) {
+function createEmptyArray(len) {
     let a = [];
     a.length = len;
     console.log(a);
     return a;
 }
-createEmptyArr(len);
+createEmptyArray(len);
