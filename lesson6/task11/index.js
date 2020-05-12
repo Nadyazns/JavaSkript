@@ -1,13 +1,21 @@
-const myArray = [3, 54, 1, 77, 32, 1, 1, 54]
+//let balances = [23, 245, 120, 25, 1];
 
-function uniqueCount(array) {
-    let unique = [];
-    let k = 0;
-    for (let i = 0; i < array.length; i++) {
-        let j = 0;
-        while (j < k && unique[j] !== array[i]) j++;
-        if (j == k) unique[k++] = array[i];
+function checker(arr) {
+    let sum = 0;
+    let max = arr[0];
+    let min = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) max = arr[i];
+
     }
-    return unique.length;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < min) min = arr[i];
+
+    }
+    sum = min + max;
+    if (sum > 1000) {
+        return true;
+    }
+    return false;
 }
-console.log(uniqueCount(myArray))
+//console.log(checker(balances))

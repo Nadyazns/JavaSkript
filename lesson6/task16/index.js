@@ -1,21 +1,13 @@
-//let balances = [23, 245, 120, 25, 1];
+const myArray = [3, 54, 1, 77, 32, 1, 1, 54]
 
-function checker(arr) {
-    let sum = 0;
-    let max = arr[0];
-    let min = arr[0];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > max) max = arr[i];
-
+function removeDuplicates(array) {
+    let sorted = [];
+    let k = 0;
+    for (let i = 0; i < array.length; i++) {
+        let j = 0;
+        while (j < k && sorted[j] !== array[i]) j++;
+        if (j == k) sorted[k++] = array[i];
     }
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < min) min = arr[i];
-
-    }
-    sum = min + max;
-    if (sum > 1000) {
-        return true;
-    }
-    return false;
+    return sorted;
 }
-//console.log(checker(balances))
+console.log(removeDuplicates(myArray))
