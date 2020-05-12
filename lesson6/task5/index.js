@@ -1,4 +1,4 @@
-let arr = [10, 20, 1]
+// let arr = [10, 20, 1]
 
 function checkSum(arr) {
     let sumOfElements = 0;
@@ -19,5 +19,5 @@ function checkSum(arr) {
 
 }
 
-let a = checkSum(arr)
-console.log(a)
+// let a = checkSum(arr)
+// console.log(a)
