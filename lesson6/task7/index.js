@@ -1,4 +1,4 @@
-let arr = [990, 1]
+let arr = [10, 20, 1]
 let sumOfElements = 0;
 
 function checkSum(arr) {
@@ -12,14 +12,12 @@ function checkSum(arr) {
                 return true;
             }
         }
-
-
+        return false;
     }
-    return false;
 }
-// // console.log(sumOfElements);
-// // return Boolean(sumOfElements > 100);
+//     // console.log(sumOfElements);
+//     // return Boolean(sumOfElements > 100);
 // }
 
-let a = checkSum(arr)
-console.log(a)
+let a = checkSum(arr);
+console.log(a);
