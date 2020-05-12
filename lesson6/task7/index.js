@@ -1,8 +1,7 @@
-let arr = [10, 20, 1]
+let arr = [10, 20, 100]
 let sumOfElements = 0;
 
 function checkSum(arr) {
-
     if (!Array.isArray(arr)) {
         return null;
     } else {
@@ -12,8 +11,9 @@ function checkSum(arr) {
                 return true;
             }
         }
-        return false;
+
     }
+    return false;
 }
 //     // console.log(sumOfElements);
 //     // return Boolean(sumOfElements > 100);
