@@ -1,18 +1,21 @@
-function reverseArray(arr) {
-    let reflection = [];
+const arrName = [10, 2, 3, 4, 5];
+let square = [];
+
+function squareArray(arr) {
+
     if (!Array.isArray(arr)) {
         return null;
     }
-    for (let i = arr.length - 1; i >= 0; i--) {
+    for (let i = 0; i < arr.length; i++) {
+        let num = arr[i];
 
-        reflection.push(arr[i]);
-
+        if (num != 0) {
+            square.push(num * num);
+        }
 
     }
-
-    return reflection
+    return square;
 }
 
-//const myArray = [20, 56, 3];
-//const t = reverseArray(myArray);
-//console.log(t);
+const show = squareArray(arrName);
+console.log(show)

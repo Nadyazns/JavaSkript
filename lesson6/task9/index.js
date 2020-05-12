@@ -1,13 +1,18 @@
-const myArray = [3, 54, 1, 77, 32, 1, 1, 54]
-
-function removeDuplicates(array) {
-    let sorted = [];
-    let k = 0;
-    for (let i = 0; i < array.length; i++) {
-        let j = 0;
-        while (j < k && sorted[j] !== array[i]) j++;
-        if (j == k) sorted[k++] = array[i];
+function reverseArray(arr) {
+    let reflection = [];
+    if (!Array.isArray(arr)) {
+        return null;
     }
-    return sorted;
+    for (let i = arr.length - 1; i >= 0; i--) {
+
+        reflection.push(arr[i]);
+
+
+    }
+
+    return reflection
 }
-console.log(removeDuplicates(myArray))
+
+//const myArray = [20, 56, 3];
+//const t = reverseArray(myArray);
+//console.log(t);

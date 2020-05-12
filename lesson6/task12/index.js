@@ -1,11 +1,13 @@
-const myArray = [1, 67, 45, 23, 7, 34, 68, 2444];
+const myArray = [3, 54, 1, 77, 32, 1, 1, 54]
 
-function cloneArr(arr) {
-    let clone = [];
-    for (var i in arr) {
-        clone[i] = arr[i];
+function removeDuplicates(array) {
+    let sorted = [];
+    let k = 0;
+    for (let i = 0; i < array.length; i++) {
+        let j = 0;
+        while (j < k && sorted[j] !== array[i]) j++;
+        if (j == k) sorted[k++] = array[i];
     }
-    return clone;
+    return sorted;
 }
-
-console.log(cloneArr(myArray));
+console.log(removeDuplicates(myArray))

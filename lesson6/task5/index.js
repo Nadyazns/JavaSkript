@@ -1,21 +1,23 @@
-//const arrName = [10, 2, 3, 4, 5];
-let square = [];
+let arr = [10, 20, 1]
 
-function squareArray(arr) {
-
+function checkSum(arr) {
+    let sumOfElements = 0;
     if (!Array.isArray(arr)) {
         return null;
-    }
-    for (let i = 0; i < arr.length; i++) {
-        let num = arr[i];
-
-        if (num != 0) {
-            square.push(num * num);
+    } else {
+        for (let i = 0; i <= arr.length; i++) {
+            sumOfElements += arr[i];
+            //     if (sumOfElements > 100) {
+            //         return true;
+            //     }
+            // }
+            // return false;
+            return Boolean(sumOfElements > 100);
         }
 
     }
-    return square;
+
 }
 
-//const show = squareArray(arrName);
-//console.log(show)
+let a = checkSum(arr)
+console.log(a)

@@ -1,36 +1,35 @@
-//const clients = ['John', 'Nadya', 'Bob'];
-//let balances = [23000, 24500, 12000];
+//myArray.push(15,20) adds to the end;
+//myArray.unshift(23,45) adds to the beginning;
+//myArray.shift() deletes te first element;
+//myArray.pop() deletes the last element;
+//const myArray = [3, 54, 1, 77, 32]
 
 
-function withdraw(clients, balances, client, amount) {
-    let balance = balances;
-    for (let i = 0; i < clients.length; i++) {
-        while (clients[i] == client) {
-            balance[i] = balances[i] - amount;
-
-            if (amount > balance[i]) return -1;
-            return balance[i];
+function sortAsc(array) {
+    for (let i = 0; i < array.length - 1; i++) {
+        let min = i;
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[j] < array[min])
+                min = j;
         }
-
+        let a = array[min];
+        array[min] = array[i];
+        array[i] = a;
     }
-
+    return array;
 }
 
-/*let index = 0;
-for (let i = 0; i < clients.length; i++) {
-        if (clients[i] == client) {
-            index=[i];
-            break;
+
+function sortDesc(array) {
+    for (let i = 0; i < array.length - 1; i++) {
+        let max = i;
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[j] > array[max])
+                max = j;
         }
+        let a = array[max];
+        array[max] = array[i];
+        array[i] = a;
     }
-    if(balances[index]>=amount){
-        balances[index]-=amount;
-        return balances[index];
-    }
-    return -1*/
-
-
-
-
-
-//console.log(withdraw(clients, balances, 'Nadya', 500))
+    return array;
+}
