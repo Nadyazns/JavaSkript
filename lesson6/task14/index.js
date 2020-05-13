@@ -1,4 +1,4 @@
-arr = [12, 7, 45, 99];
+let arr = [12, 7, 45, 99];
 
 
 function getSubArray(arr, num) {
@@ -10,4 +10,4 @@ function getSubArray(arr, num) {
     return subArray;
 }
 
-console.log(getSubArray(arr, 5));
+console.log(getSubArray(arr, 1));
