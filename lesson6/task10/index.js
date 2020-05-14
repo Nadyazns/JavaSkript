@@ -1,11 +1,11 @@
-const myArray = [1, 67, 45, 23, 7, 34, 68, 2444];
+// const myArray = [1, 67, 45, 23, 7, 34, 68, 2444];
 
 function cloneArr(arr) {
-    let clone = [];
-    for (var i in arr) {
-        clone[i] = arr[i];
+    if (!Array.isArray(arr)) {
+        return null;
     }
+    let clone = [...rest] = arr;
     return clone;
 }
 
-console.log(cloneArr(myArray));
+// console.log(cloneArr(myArray));
