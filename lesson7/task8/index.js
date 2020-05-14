@@ -4,7 +4,7 @@ function cloneArr(arr) {
     if (!Array.isArray(arr)) {
         return null;
     }
-    let clone = [...rest] = arr;
+    let clone = [...arr];
     return clone;
 }
 
