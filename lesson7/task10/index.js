@@ -1,4 +1,4 @@
-// const arr = [1, 2, 4, 5];
+const arr = [1, 2, 4, 5];
 
 function sum(arr) {
     if (!Array.isArray(arr)) {
@@ -10,5 +10,5 @@ function sum(arr) {
 }
 
 
-// console.log(arr);
-// console.log(sum(arr));
+console.log(arr);
+console.log(sum(arr));
