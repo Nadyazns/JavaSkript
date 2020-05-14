@@ -3,9 +3,11 @@
 function cloneArr(arr) {
     if (!Array.isArray(arr)) {
         return null;
+    } else {
+        let clone = [...rest] = arr;
+        return clone;
     }
-    let clone = [...rest] = arr;
-    return clone;
+
 }
 
 
