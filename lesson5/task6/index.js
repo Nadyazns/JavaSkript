@@ -8,7 +8,7 @@ function isPrime(number) {
 function getPrimes(num) {
     for (let f = 2; f <= num; f++) {
         if (isPrime(f)) {
-            console.log(f)
+            console.log(f);
         }
     }
 }
