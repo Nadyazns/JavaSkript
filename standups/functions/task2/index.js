@@ -20,7 +20,7 @@
 // 2.if num % i !== 0 - false;
 
 function isPrime(num) {
-    for (let i = 2; i <= num; i++) {
+    for (let i = 2; i < num; i++) {
         // console.log(i + ' is a check');
         if (num % i === 0) {
             // console.log(i + "is prime");
