@@ -8,8 +8,8 @@
 // 4. return new Array;
 
 
-let clients = ['Alex', 'Nadya', 'Ann', 'Tolik'];
-let balances = [200, 500, 800, 450];
+// let clients = ['Alex', 'Nadya', 'Ann', 'Tolik'];
+// let balances = [200, 500, 800, 450];
 
 let withdraw = (clients, balances, client, amount) => {
     let indexOfElem = balances[clients.indexOf(client)] = balances[clients.indexOf(client)] - amount;
@@ -19,7 +19,7 @@ let withdraw = (clients, balances, client, amount) => {
         return -1;
     }
     return balances;
-    //     console.log(clients.indexOf(client) = balances.indexOf(amount))
+
 }
 
-console.log(withdraw(clients, balances, 'Alex', 50));
+// console.log(withdraw(clients, balances, 'Alex', 50));
