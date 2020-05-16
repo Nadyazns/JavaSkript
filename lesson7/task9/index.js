@@ -14,7 +14,7 @@
 let withdraw = (clients, balances, client, amount) => {
     let indexOfElem = balances[clients.indexOf(client)] = balances[clients.indexOf(client)] - amount;
 
-    if (indexOfElem <= 0) {
+    if (amount > balances[clients.indexOf(client)]) {
         delete balances[indexOfElem];
         return -1;
     }
