@@ -1,6 +1,12 @@
-function filterNAmes(arr, text) {
+// let arr = ['John', 'Olivya', 'Oleksandr', 'Emanuel', 'Vanya', 'Nastya', 'Nadya'];
+// let text = 'ya';
 
+
+function filterNames(arr, text) {
+    const result = arr.filter((arr) => {
+        return arr.length > 5 && arr.includes(text);
+    })
+    return result;
 }
-
-let arr = ['Ann', 'Nadya', 'Juliya', 'Inna', 'Nastya'];
-let text = 'ya';
+// const a = filterNames(arr, text);
+// console.log(a);
