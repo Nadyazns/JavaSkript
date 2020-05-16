@@ -2,9 +2,9 @@
 // output: Array;
 
 // algo:
-// 1. iterate clients and index of client;
-// 2. iterate balances and find clints balance;
-// 3. withraw money;
+// 1. find clients and index of client;
+// 2. find clients balance;
+// 3. withraw money from clients balance;
 // 4. return new Array;
 
 
@@ -14,7 +14,7 @@
 let withdraw = (clients, balances, client, amount) => {
     let indexOfElem = balances[clients.indexOf(client)] = balances[clients.indexOf(client)] - amount;
 
-    if (indexOfElem < amount) {
+    if (indexOfElem <= 0) {
         delete balances[indexOfElem];
         return -1;
     }
