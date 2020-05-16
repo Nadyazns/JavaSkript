@@ -7,7 +7,7 @@
 // 3 map each + delta
 
 function increaseEvenEl(arr, delta) {
-    if (!Array.isArray) {
+    if (!Array.isArray(arr)) {
         return null;
     }
     return arr.filter(i => i % 2 == 0)
