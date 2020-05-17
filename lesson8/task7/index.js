@@ -1,4 +1,4 @@
-let user = {
+let transaction = {
     name: 'Nadya',
     age: 33,
     country: 'Ukraine',
@@ -9,8 +9,8 @@ const addProperty1 = (obj, key, value) => {
     return obj;
 }
 
-const a = addProperty1(user, 'sex', 'female');
-console.log(a)
+const result = addProperty1(transaction, 'sex', 'female');
+console.log(result)
 
 const addProperty2 = (obj, key, value) => {
     let a = {};
@@ -19,8 +19,8 @@ const addProperty2 = (obj, key, value) => {
     return obj;
 }
 
-const b = addProperty2(user, 'sex', 'female');
-console.log(b);
+const result1 = addProperty2(transaction, 'sex', 'female');
+console.log(result1);
 
 const addProperty3 = (obj, key, value) => {
     let a = {};
@@ -29,8 +29,8 @@ const addProperty3 = (obj, key, value) => {
     return obj;
 }
 
-const c = addProperty3(user, 'sex', 'female');
-console.log(c);
+const result2 = addProperty3(transaction, 'sex', 'female');
+console.log(result2);
 
 
 
@@ -41,5 +41,5 @@ const addProperty4 = (obj, key, value) => {
     return a;
 }
 
-const d = addProperty4(user, 'sex', 'female');
-console.log(d);
+const result3 = addProperty4(transaction, 'sex', 'female');
+console.log(result3);
