@@ -32,7 +32,7 @@ let obj6 = {
 const compareObjects = (obj1, obj2) => {
     for (let key in obj1) {
         for (let key1 in obj2) {
-            if (obj1[key] != obj2[key]) {
+            if (obj1[key] != obj2[key] && key != key1) {
                 // console.log(obj1[key] + ' and ' + obj2[key]);
                 // console.log(key + ' and ' + key1);
                 return false;
@@ -43,7 +43,8 @@ const compareObjects = (obj1, obj2) => {
 
 
     }
+
     return true;
 }
-let result = compareObjects(obj6, obj5);
+let result = compareObjects(obj5, obj6);
 console.log(result)
