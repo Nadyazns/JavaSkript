@@ -23,6 +23,11 @@ let obj5 = {
     age: 33,
     home: 'Ukraine',
 }
+let obj6 = {
+    name: 'Nadya',
+    age: 33,
+    home: 'donetsk',
+}
 
 const compareObjects = (obj1, obj2) => {
     for (let key in obj1) {
@@ -40,5 +45,5 @@ const compareObjects = (obj1, obj2) => {
     }
     return true;
 }
-let result = compareObjects(obj1, obj3);
+let result = compareObjects(obj6, obj5);
 console.log(result)
