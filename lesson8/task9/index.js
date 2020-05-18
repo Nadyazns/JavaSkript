@@ -1,22 +1,22 @@
-// let obj1 = {
-//     name: 'Nadya',
-//     age: 33,
-//     country: 'Ukraine',
-// }
-// let obj2 = {
-//     hair: 'red',
-//     age: 18,
-// }
-// let obj3 = {
-//     name: 'Nadya',
-//     age: 33,
-//     country: 'Ukraine',
-// }
-// let obj4 = {
-//     hair: 'red',
-//     age: 18,
-//     sex: 'female',
-// }
+let obj1 = {
+    name: 'Nadya',
+    age: 33,
+    country: 'Ukraine',
+}
+let obj2 = {
+    hair: 'red',
+    age: 18,
+}
+let obj3 = {
+    name: 'Nadya',
+    age: 33,
+    country: 'Ukraine',
+}
+let obj4 = {
+    hair: 'red',
+    age: 18,
+    sex: 'female',
+}
 
 const compareObjects = (obj1, obj2) => {
     for (let key in obj1) {
