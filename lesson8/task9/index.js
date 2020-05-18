@@ -18,19 +18,27 @@ let obj4 = {
     sex: 'female',
 }
 
+let obj5 = {
+    name: 'Nadya',
+    age: 33,
+    home: 'Ukraine',
+}
+
 const compareObjects = (obj1, obj2) => {
     for (let key in obj1) {
         for (let key1 in obj2) {
-            // console.log(obj1[key] + ' and ' + obj2[key1]);
-            // console.log(key + ' and ' + key1);
-            if (obj1[key] == obj2[key1] && key === key1) {
-                return true;
-            }
-            return false;
-        }
-        return false;
-    }
+            if (obj1[key] != obj2[key]) {
+                // console.log(obj1[key] + ' and ' + obj2[key]);
+                // console.log(key + ' and ' + key1);
+                return false;
 
+            }
+
+        }
+
+
+    }
+    return true;
 }
-let result = compareObjects(obj1, obj4);
+let result = compareObjects(obj1, obj3);
 console.log(result)
