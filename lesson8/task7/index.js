@@ -25,8 +25,8 @@ console.log(result1);
 const addPropertyV3 = (obj, key, value) => {
     let a = {};
     a[key] = value;
-    Object.assign(obj, a);
-    return obj;
+    Object.assign(a, obj);
+    return a;
 }
 
 const result2 = addPropertyV3(transaction, 'sex', 'female');
@@ -37,7 +37,6 @@ console.log(result2);
 const addPropertyV4 = (obj, key, value) => {
     let a = {...obj };
     a[key] = value;
-    Object.assign(obj, a);
     return a;
 }
 
