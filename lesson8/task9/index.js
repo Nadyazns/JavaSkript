@@ -26,7 +26,7 @@ const compareObjects = (obj1, obj2) => {
             if (obj1[key] == obj2[key1] && key === key1) {
                 return true;
             }
-
+            return false;
         }
         return false;
     }
