@@ -1,9 +1,9 @@
 const multiRound = num => [
-    Math.floor(num),
-    Math.round(num),
-    Math.ceil(num),
-    Math.trunc(num),
+    Math.floor(num * 100) / 100,
+    Math.round(num * 100) / 100,
+    Math.ceil(num * 100) / 100,
+    Math.trunc(num * 100) / 100,
     Number(num.toFixed(2)),
 ]
 
-console.log(multiRound(-17.295));
+console.log(multiRound(17.215));
