@@ -25,8 +25,10 @@ let rooms = {
 // 2. make it flat
 // 3. map the name into the new array
 
-const getPeople = obj =>
-    peoplesNames = Object.values(obj).flat().map(obj => obj.name);
+const getPeople = obj => {
+    let peoplesNames = Object.values(obj).flat().map(obj => obj.name);
+    return peoplesNames;
+}
 
 
 // getPeople(rooms);
