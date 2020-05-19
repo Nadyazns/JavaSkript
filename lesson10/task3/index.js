@@ -5,4 +5,4 @@ const multiRound = num => [
     Math.trunc(num), +num.toFixed(1),
 ]
 
-console.log(multiRound(-17));
+console.log(multiRound(17));
