@@ -30,7 +30,7 @@ const getPeople = rooms => {
     let peoplesNames = [];
     let peps = [];
     let namesListOfArrOfObj = Object.values(rooms); // 1. [[{name:"room1 name1"},{name:"room2 name2"}, {name:"room3 name3"}], [{name:"room1 name1"}, {name: " room2 name2"}], ...]
-    console.log(namesListOfArrOfObj);
+
     let arrOfObj = [];
     for (let i = 0; i < namesListOfArrOfObj.length; i++) {
         for (let a = 0; a < namesListOfArrOfObj[i].length; a++) {
@@ -43,4 +43,4 @@ const getPeople = rooms => {
     return peoplesNames;
 }
 
-console.log(getPeople(rooms))
+console.log(getPeople(rooms));
