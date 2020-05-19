@@ -45,7 +45,7 @@ console.log('after' + numbersList);
 // выведите numbersList в консоль
 
 console.log('before' + numbersList);
-let res4 = numbersList.unshift(100);
+let res4 = numbersList.unshift(0);
 console.log(res4);
 console.log('after' + numbersList);
 
@@ -76,8 +76,8 @@ const squaredNumbers = numbersList1.map((el) => el * el);
 // };
 // const squaredNumbers = numbersList.map(callback);
 
-
-console.log('after' + squaredNumbers);
+console.log('after' + numbersList1);
+console.log(squaredNumbers);
 
 
 /* метод filter */
