@@ -25,9 +25,11 @@ let rooms = {
 // 2. make it flat
 // 3. map the name into the new array
 
-let getPeople = rooms =>
-    peoplesNames = Object.values(rooms).flat().map((obj) => obj.name);
+const getPeople = obj =>
+    peoplesNames = Object.values(obj).flat().map(obj => obj.name);
 
+
+// getPeople(rooms);
 
 // let peoplesNames = [];
 // let namesListOfArrOfObj = Object.values(rooms); // 1. [[{name:"room1 name1"},{name:"room2 name2"}, {name:"room3 name3"}], [{name:"room1 name1"}, {name: " room2 name2"}], ...]
@@ -49,4 +51,4 @@ let getPeople = rooms =>
 //     return peoplesNames;
 // }
 
-// console.log(getPeople(rooms));
+console.log(getPeople(rooms));
