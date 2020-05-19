@@ -1,46 +1,47 @@
-const user = {
-    id1: {
+const customers = {
+    'customer -id-1': {
         name: 'alex',
         age: 35,
 
     },
-    id2: {
+    'customer -id-2': {
         name: 'severin',
         age: 21,
     },
-    id3: {
+    'customer -id-3': {
         name: 'nadya',
         age: 32,
     },
-    id4: {
+    'customer -id-4': {
         name: 'Tom',
         age: 13,
     }
 };
+
+
+//input: object;
+//output:array of objects.
+
+// algo:
+// 1.
+// 2.
+// 3.
+
 const getCustomersList = obj => {
     const list = Object.entries(obj);
-    console.log(list);
+    // console.log(list);
     let objId = {};
+    let customersList = [];
     for (let key in obj) {
         objId = {...obj[key] };
         objId.id = key;
-        console.log(objId)
+        // console.log(objId);
+        customersList.push(objId);
     };
+    return customersList.sort(function(a, b) {
+        return a.age - b.age;
+    });
+
 };
 
-console.log(getCustomersList(user))
-
-//function sortArr(list) {
-//   list.sort((a, b) = a.age > b.age ? 1 : -1)
-//}
-//console.log(sortArr(list));
-//list.sort((a, b) => user[a] - user[b])
-//const { id = list[0] } = obj;
-
-
-
-// const mine = arr => {
-//     let obj1 = {};
-//     obj1.id = arr[0]
-//     return obj1
-// }
+console.log(getCustomersList(customers))
