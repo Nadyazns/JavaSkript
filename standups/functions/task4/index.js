@@ -44,9 +44,9 @@ console.log('after' + numbersList);
 // c помощью метода unshift добавьте число 0 в начало массива
 // выведите numbersList в консоль
 
-console.log('before' + numbersList);
-let res4 = numbersList.unshift(0);
-console.log(res4);
+// console.log('before' + numbersList);
+
+console.log(numbersList.unshift(0));
 console.log('after' + numbersList);
 
 
@@ -66,17 +66,17 @@ console.log('after' + numbersList);
 // c помощью метода map создайте новый массив squaredNumbers, в котором будут квадраты чисел из numbersList
 // выведите squaredNumbers в консоль
 
-const numbersList1 = [1, 2, 3, 4, 5];
-console.log('before' + numbersList1);
 
-const squaredNumbers = numbersList1.map((el) => el * el);
+console.log('before' + numbersList);
+
+const squaredNumbers = numbersList.map((el) => el * el);
 // let callback = function(element) {
 //     element += 100;
 //     return element;
 // };
 // const squaredNumbers = numbersList.map(callback);
 
-console.log('after' + numbersList1);
+console.log('after' + numbersList);
 console.log(squaredNumbers);
 
 
@@ -91,7 +91,7 @@ console.log(squaredNumbers);
 // выведите evenNumbers в консоль
 
 
-console.log('before' + numbersList1);
+console.log('before' + numbersList);
 
 // let callback1 = function(el) {
 //     if (el >5)
@@ -103,12 +103,12 @@ console.log('before' + numbersList1);
 const filtered = squaredNumbers.filter((el, index, array) => {
     console.log(index);
     console.log(array);
-    el % 2 === 0
+    return el % 2 === 0;
 });
 
+console.log(filtered)
 
-
-console.log('after' + filtered);
+console.log('after filtered' + filtered);
 
 
 /* метод find */
@@ -132,17 +132,17 @@ console.log(numbers.forEach(el => sum += el));
 console.log(sum);
 
 // REDUCE 
-console.log("before reduce")
+console.log("before reduce");
 let ress = numbers.reduce((acc, el, index) => {
     console.log('STEP ' + index + ' acc is ' + acc)
     return acc += el;
 }, 0);
 
 console.log(ress);
-console.log('after reduce 2')
+console.log('after reduce 2');
 
 
-console.log("before reduce")
+console.log("before reduce");
 let ress1 = numbers.reduce((acc, el) => {
     if (el % 2 === 0)
         acc.push(el);
