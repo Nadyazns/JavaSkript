@@ -11,7 +11,7 @@ const getRandomNumbers = (arrlength, start, end) => {
 
     let arrOfRandomNumbers = [];
     for (let i = 0; i < arrlength; i++) {
-        arrOfRandomNumbers.push(Math.floor(Math.random() * (finish - start) + start));
+        arrOfRandomNumbers.push(Math.floor(Math.random() * (end - start) + start));
     }
     return arrOfRandomNumbers;
 }
