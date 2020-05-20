@@ -100,7 +100,11 @@ console.log('before' + numbersList1);
 //         return false;
 // }
 
-const filtered = squaredNumbers.filter((el) => el % 2 === 0);
+const filtered = squaredNumbers.filter((el, index, array) => {
+    console.log(index);
+    console.log(array);
+    el % 2 === 0
+});
 
 
 
@@ -114,4 +118,36 @@ console.log('after' + filtered);
 
 // c помощью метода find найдите первое нечетное число в numbersList и выведите его в консоль
 
-// ... code here
+const numbers = [1, 2, 3, 4, 5, 100, 40, 44, 55, 1234];
+
+const res = numbers.find(el => el > 300);
+console.log(res)
+
+
+// FOREACH
+
+
+let sum = 0;
+console.log(numbers.forEach(el => sum += el));
+console.log(sum);
+
+// REDUCE 
+console.log("before reduce")
+let ress = numbers.reduce((acc, el, index) => {
+    console.log('STEP ' + index + ' acc is ' + acc)
+    return acc += el;
+}, 0);
+
+console.log(ress);
+console.log('after reduce 2')
+
+
+console.log("before reduce")
+let ress1 = numbers.reduce((acc, el) => {
+    if (el % 2 === 0)
+        acc.push(el);
+    return acc;
+}, []);
+
+console.log(ress1);
+console.log('after reduce 2')
