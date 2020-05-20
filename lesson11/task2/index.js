@@ -15,13 +15,13 @@ const contacts = [{
 
 
 
-const sortContacts = (contacts, a = true) => {
+const sortContacts = (contacts, incr = true) => {
     if (!Array.isArray(contacts))
         return null;
 
     const result = contacts
         .sort((a, b) => {
-            if (!a) {
+            if (!incr) {
                 return b.name.localeCompare(a.name);
             } else {
                 return a.name.localeCompare(b.name);
@@ -31,4 +31,4 @@ const sortContacts = (contacts, a = true) => {
     return result;
 };
 
-console.log(sortContacts(contacts, false));
+console.log(sortContacts(contacts));
