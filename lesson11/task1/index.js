@@ -1,6 +1,9 @@
-const splitText = (text, len) => {
+const splitText = (text, len = 10) => {
     const strArr = [];
     let start = 0;
+    if (typeof text != "string") {
+        return null;
+    }
     while (true) {
         let chunk = text.substr(start, len);
         if (chunk.length === 0) {
@@ -12,4 +15,4 @@ const splitText = (text, len) => {
     return strArr.join('\n');
 };
 
-console.log(splitText('мамамылараму', 5));
+console.log(splitText('мамамылараму'));
