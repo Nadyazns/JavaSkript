@@ -46,8 +46,10 @@ console.log('after' + numbersList);
 
 // console.log('before' + numbersList);
 
-console.log(numbersList.unshift(0));
-console.log('after' + numbersList);
+
+numbersList.unshift(0);
+
+console.log(numbersList);
 
 
 
