@@ -10,11 +10,9 @@
 let transactions = [' 3.5', '14.50', 20, '2 dollars'];
 
 const cleanTransactionsList = arr => {
-    let cleanList = [...arr];
+    return arr.map(elem => Number(elem)).filter(Boolean).map(num => '$' + num.toFixed(2));
 
-    cleanList = arr.map(elem => parseFloat(elem).toFixed(2));
 
-    return cleanList.map(num => '$' + num);
 }
 
 console.log(cleanTransactionsList(transactions));
