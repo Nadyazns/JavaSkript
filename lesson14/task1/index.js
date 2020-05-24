@@ -2,7 +2,7 @@
 
 let message = "Just learn it";
 
-export const sendMessage = name => {
+export const sendMessage = (name) => {
     const sender = 'Gromcode';
     console.log(`${name},${message}! Your ${sender}`)
 };
@@ -10,11 +10,6 @@ export const sendMessage = name => {
 export function setMessage(text) {
     message = text;
 }
-sendMessage('Ann');
-setMessage('Good job');
-sendMessage('Ann');
-
-// another.js
-// import {sendMessage} from '.index.js';
-// let message = 'bye!';
-//sendMessage('Ann')
+// sendMessage('Ann');
+// setMessage('Good job');
+// sendMessage('Ann');
