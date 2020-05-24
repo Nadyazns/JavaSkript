@@ -11,9 +11,9 @@ export const sendMessage = name => {
 export function setMessage(text) {
     message = text;
 }
-// sendMessage('Ann');
-// setMessage('Good job');
-// sendMessage('Ann');
+sendMessage('Ann');
+setMessage('Good job');
+sendMessage('Ann');
 
 // another.js
 // import {sendMessage} from '.index.js';
