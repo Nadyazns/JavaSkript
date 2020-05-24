@@ -20,7 +20,7 @@ const createMessenger = () => {
         setSender,
     };
 };
-// export default createMessenger;
+export default createMessenger;
 
 
 const messenger = createMessenger();
