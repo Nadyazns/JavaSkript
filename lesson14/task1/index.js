@@ -2,7 +2,7 @@
 'use strict'
 let message = "Just learn it";
 
-function setMessage(text) {
+export function setMessage(text) {
     message = text;
 }
 
@@ -14,3 +14,8 @@ function sendMessage(name) {
 
 setMessage('Good job');
 sendMessage('Ann');
+
+// another.js
+// import {sendMessage} from '.index.js';
+// let message = 'bye!';
+//sendMessage('Ann')
