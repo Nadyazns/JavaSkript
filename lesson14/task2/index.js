@@ -4,7 +4,6 @@ const createMessenger = () => {
     let sender = 'Gromcode';
 
     function sendMessage(name) {
-
         console.log(`${name}, ${message}! Your ${sender}`);
     };
 
@@ -21,9 +20,11 @@ const createMessenger = () => {
         setSender,
     };
 };
+export default createMessenger;
+
 
 const messenger = createMessenger();
 messenger.sendMessage('Bob');
-const messenger2 = createMessenger();
-messenger2.setMessage('Good job!');
-messenger2.sendMessage('Bob');
+const messenger1 = createMessenger();
+messenger1.setMessage('Good job!');
+messenger1.sendMessage('Bob');
