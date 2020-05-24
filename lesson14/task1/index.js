@@ -13,3 +13,8 @@ export function setMessage(text) {
 // sendMessage('Ann');
 // setMessage('Good job');
 // sendMessage('Ann');
+
+// another.js
+// import {sendMessage} from '.index.js';
+// let message = 'bye!';
+//sendMessage('Ann')
