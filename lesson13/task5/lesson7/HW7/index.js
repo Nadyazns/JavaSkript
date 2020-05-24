@@ -2,7 +2,7 @@ let arr = ['John', 'Olivya', 'Oleksandr', 'Emanuel', 'Vanya', 'Nastya', 'Nadya']
 let text = 'ya';
 
 
-function filterNames(arr, text) {
+export function filterNames(arr, text) {
     const result = arr.filter((arr) => {
         return arr.length > 5 && arr.includes(text);
     })
