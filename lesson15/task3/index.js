@@ -46,6 +46,6 @@ export function createLogger() {
     }
 }
 
-const logger1 = createLogger();
-const logger2 = createLogger();
-const logger3 = createLogger();
+// const logger1 = createLogger();
+// const logger2 = createLogger();
+// const logger3 = createLogger();
