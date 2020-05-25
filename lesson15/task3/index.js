@@ -8,7 +8,7 @@ export function createLogger() {
             message: str,
             dateTime: new Date(),
         }
-        return memory = [{...warn }];
+        memory = [{...warn }];
     }
 
     function error(str) {
@@ -17,7 +17,7 @@ export function createLogger() {
             message: str,
             dateTime: new Date(),
         }
-        return memory = [{...error }];
+        memory = [{...error }];
     }
 
     function log(str) {
@@ -26,7 +26,7 @@ export function createLogger() {
             message: str,
             dateTime: new Date(),
         }
-        return memory = [{...log }];
+        memory = [{...log }];
     }
 
     function getRecords(type) {
