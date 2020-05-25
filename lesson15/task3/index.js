@@ -17,7 +17,7 @@ export function createLogger() {
             type: 'error',
             dateTime: new Date(),
         }
-        memory.push(error);
+        return memory.push(error);
     }
 
     function log(str) {
@@ -26,7 +26,7 @@ export function createLogger() {
             type: 'log',
             dateTime: new Date(),
         }
-        memory.push(log);
+        return memory.push(log);
     }
 
     function getRecords(type) {
