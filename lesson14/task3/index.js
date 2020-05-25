@@ -1,11 +1,17 @@
 let num = 0;
 
-function add(number) {
-    return number + num;
+export function add(number) {
+    return num = number + num;
 }
 
-function decrease(number) {
-    return num - number;
+export function decrease(number) {
+    return num = num - number;
 }
 
-function reset
+export function reset(number) {
+    return number = 0;
+}
+
+export function getMemo(number) {
+    return number = num;
+}
