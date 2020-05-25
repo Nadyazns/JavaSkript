@@ -4,8 +4,8 @@ export function createLogger() {
 
     function warn(str) {
         let warn = {
-            type: 'warn',
             message: str,
+            type: 'warn',
             dateTime: new Date(),
         }
         return memory.push(warn);
@@ -13,20 +13,20 @@ export function createLogger() {
 
     function error(str) {
         let error = {
-            type: 'error',
             message: str,
+            type: 'error',
             dateTime: new Date(),
         }
-        memory = [{...error }];
+        memory.push(error);
     }
 
     function log(str) {
         let log = {
-            type: 'log',
             message: str,
+            type: 'log',
             dateTime: new Date(),
         }
-        memory = [{...log }];
+        memory.push(log);
     }
 
     function getRecords(type) {
