@@ -8,7 +8,7 @@ export function createLogger() {
             message: str,
             dateTime: new Date(),
         }
-        memory = [{...warn }];
+        memory.push(warn);
     }
 
     function error(str) {
