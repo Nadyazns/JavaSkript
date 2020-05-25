@@ -9,9 +9,9 @@ export function decrease(number) {
 }
 
 export function reset(number) {
-    return number = 0;
+    return num = 0;
 }
 
-export function getMemo(number) {
-    return number = num;
+export function getMemo() {
+    return num;
 }
