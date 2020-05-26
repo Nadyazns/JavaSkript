@@ -10,7 +10,7 @@ export function createArrayOfFunctions(len) {
         }
 
     }
-    if (len == undefined) {
+    if (len == '') {
         return arr.length = 0;
     }
     return arr;
