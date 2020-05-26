@@ -10,7 +10,8 @@ let userId = '1111';
 //output:object;
 
 function addPropertyV1(userData, userId) {
-    return userData.id = userId;
+    userData.id = userId;
+    return userData;
 }
 console.log(addPropertyV1(userData, userId));
 
@@ -36,6 +37,7 @@ function addPropertyV4(userData, userId) {
     //copy obj;
     // let resObj = {...userData};
     // let resObj = Object.assign({},userData);
+
     return resObj = {...userData, id: userId };
 
 }
