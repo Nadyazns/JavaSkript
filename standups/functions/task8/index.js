@@ -1,55 +1,47 @@
 //input:object,string;
 //output:object;
-
-function addPropertyV1(userData, userId) {
-    userData.id = userId;
-    return userData;
-}
-
-let userData = {
+let obj1 = {
     name: 'Andrey',
-    city: 'Lviv',
-    age: 20
+    phone: '0202374982',
+    price: 76,
 };
 
-let userId = '1111';
-console.log(addPropertyV1(userData, userId));
+let obj2 = {
+    name: 'Denis',
+    city: 'Lviv',
+    age: 20
+}
+
+
+function mergeObjectsV1(obj1, obj2) {
+    return Object.assign(obj1, obj2);
+}
+console.log(mergeObjectsV1(obj1, obj2));
+
+
+
 
 //input:object,string;
 //output:object;
 
-function addPropertyV2(userData, userId) {
-    let obj = { id: userId };
-    return Object.assign(userData, obj);
-    // return Object.assign(userData, { userId });
+function mergeObjectsV2(obj1, obj2) {
+    return Object.assign(obj2, obj1);
 
 }
+console.log(mergeObjectsV2(obj1, obj2));
 
 
-console.log(addPropertyV3(userData, userId));
-
-function addPropertyV3(userData, userId) {
-
-    return Object.assign({}, userData, { id: userId });
-
+function mergeObjectsV3(obj1, obj2) {
+    return Object.assign({...obj1 }, {...obj2 });
 }
 
-console.log(addPropertyV3(userData, userId));
+console.log(mergeObjectsV3(obj1, obj2));
 
 
-function addPropertyV4(userData, userId) {
-    //copy obj;
-    // let resObj = {...userData};
-    // let resObj = Object.assign({},userData);
-    return resObj = {...userData, id: userId };
 
+
+function mergeObjectsV4(obj1, obj2) {
+    return Object.assign({...obj2 }, {...obj1 });
 }
 
-
-console.log(addPropertyV4(userData, userId));
-
-//SPREAD 
-
-let arr = [1, 2, 3, ];
-let res = [...arr, 5, 10, 12];
-//[1,2,3,5,10,12]
+console.log(mergeObjectsV4(obj1, obj2));
