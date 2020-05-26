@@ -1,7 +1,7 @@
 //input:object,string;
 //output:object;
 
-function addProperty(userData, userId) {
+function addPropertyV1(userData, userId) {
     userData.id = userId;
     return userData;
 }
@@ -13,7 +13,7 @@ let userData = {
 };
 
 let userId = '1111';
-console.log(addProperty(userData, userId));
+console.log(addPropertyV1(userData, userId));
 
 //input:object,string;
 //output:object;
