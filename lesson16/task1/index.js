@@ -1,11 +1,11 @@
-var a = 17;
+let a = 17;
 
 if (a) {
 
-    var a = 1;
+    let a = 1;
 
     console.log(a);
 
 }
-var a = 17;
+
 console.log(a);
