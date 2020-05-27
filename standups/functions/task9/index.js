@@ -35,6 +35,6 @@ const buildObject = (keysList, valuesList) =>
             [key]: value = valuesList[index]
         }), {});
 
-let keys = ['name', 'city', 'price'];
-let values = ['Denis', 'Lviv', 300];
-console.log(buildObject(keys, values));
+// let keys = ['name', 'city', 'price'];
+// let values = ['Denis', 'Lviv', 300];
+// console.log(buildObject(keys, values));
