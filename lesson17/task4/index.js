@@ -73,5 +73,5 @@ const anotherTransaction = {
 // вызовите метод transaction.printTransaction так, чтобы в консоль вывелось
 // '400 USD - buy on NASDAQ'
 // используйте объект anotherTransaction как контекст
-const trans = transaction.printTransaction;
-trans.call(anotherTransaction);
+
+transaction.printTransaction.call(anotherTransaction);
