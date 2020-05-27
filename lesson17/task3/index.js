@@ -13,5 +13,5 @@ export function defer(func, ms) {
 //     }
 // }
 
-const defferHi = defer(user.sayHi, 1000);
-defferHi.call({ name: "Nadya" });
+// const defferHi = defer(user.sayHi, 1000);
+// defferHi.call({ name: "Nadya" });
