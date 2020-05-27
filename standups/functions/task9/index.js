@@ -29,13 +29,11 @@
 //         return obj;
 //     }, {})
 // }
-function buildObject(keysList, valuesList) {
-    return keysList.reduce((acc, key, index) => {
-        return Object.assign(acc, {
+const buildObject = (keysList, valuesList) =>
+    keysList.reduce((acc, key, index) =>
+        Object.assign(acc, {
             [key]: value = valuesList[index]
-        });
-    }, {})
-};
+        }), {});
 
 let keys = ['name', 'city', 'price'];
 let values = ['Denis', 'Lviv', 300];
