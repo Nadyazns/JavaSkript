@@ -12,7 +12,7 @@ sayName.call(student);
 
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
-sayName.call({ name: 'Bruce' })
+sayName.call({ name: 'Bruce' });
 
 
 
@@ -47,7 +47,7 @@ function getPopulation(population) {
 // используйте объект country
 // результат работы ф-ции getPopulation присвойте в переменную и выведите в консоль
 let people = getPopulation.call(country, 43000);
-console.log(people)
+console.log(people);
 
 
 
