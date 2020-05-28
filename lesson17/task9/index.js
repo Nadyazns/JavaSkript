@@ -41,6 +41,6 @@
   * и должна принимать 1 число и возвращать это число умноженное на 2
   */
  export function twice(a) {
-     const double = calculator.bind({ operation: '+' }, a);
+     const double = calculator.bind({ operation: '+' }, b = a);
      return double(a);
  }
