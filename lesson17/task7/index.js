@@ -5,7 +5,6 @@
 // algo
 // 1.getFullName returns full name;
 // 2.setFullName ('name lastname') => modified obj accordingly to name lastname.
-
 export const user = {
     firstName: "Nadya",
     lastName: "Zhuravlova",
@@ -22,6 +21,6 @@ export const user = {
     }
 }
 
-// console.log(user.getFullName());
-// let name = user.getFullName();
-// console.log(name);
+user.setFullName('Dave Smith');
+
+console.log(user.getFullName());
