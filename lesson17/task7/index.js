@@ -6,7 +6,7 @@
 // 1.getFullName returns full name;
 // 2.setFullName ('name lastname') => modified obj accordingly to name lastname.
 
-const user = {
+export const user = {
     firstName: "Nadya",
     lastName: "Zhuravlova",
     getFullName() {
