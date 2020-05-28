@@ -33,7 +33,7 @@ let obj6 = {
 // 1. write a function to transform keys and values into array;
 // 2 check if the length of the objects is the same
 // 3  compare values;
-// 4 if true return true.
+// 4 if true return true else return
 // 5 if false return false.
 
 
