@@ -19,7 +19,7 @@
   * с использования .bind
   * и должна принимать 2 числа и возвращать из произведение
   */
- function multiplier(a, b) {
+ export function multiplier(a, b) {
 
      const functMult = calculator.bind({ operation: '*' });
      return functMult(a, b)
@@ -30,7 +30,7 @@
   * с использования .bind
   * и должна принимать 2 числа и возвращать из сумму
   */
- function summator(a, b) {
+ export function summator(a, b) {
      const sum = calculator.bind({ operation: '+' });
      return sum(a, b);
  }
@@ -40,7 +40,7 @@
   * с использования .bind
   * и должна принимать 1 число и возвращать это число умноженное на 2
   */
- function twice(a) {
+ export function twice(a) {
      const double = calculator.bind({ operation: '*' });
      return double(a, a);
  }
