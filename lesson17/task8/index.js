@@ -36,4 +36,4 @@ export let timer = {
         },
     }
     // timer.startTimer();
-    // console.log(timer.resetTimer());
+    // console.log(timer.getTime());
