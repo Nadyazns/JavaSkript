@@ -3,14 +3,14 @@
 
 // algorythm:
 
-// in  own function create method with value=[]
+// saveCalls function takes func as arg and returns function withMemory;
 //  push all the elements arguments to the function in empty array
-// return function  with method call and shown this and arguments
+// withMEmory.calls = []
 
 
 
 
-function saveCalls(func) {
+export function saveCalls(func) {
 
     function withMemory(...args) {
         withMemory.calls.push(args);
