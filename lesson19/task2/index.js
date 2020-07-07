@@ -1,38 +1,38 @@
-export function getOwnProps(obj) {
-    for (let prop in obj) {
-        if (obj.hasOwnProperty(prop)) {
-            return prop;
-        }
-    }
-    // return console.log(Object.keys(obj));
+ export function getOwnProps(obj) {
+     // for (let prop in obj) {
+     //     if (obj.hasOwnProperty(prop)) {
+     //         return prop;
+     //     }
+     // }
+     return Object.keys(obj).filter((i) => typeof obj[i] != 'function');
+ }
 
+ //  const vehicle = {
+ //      name: 'Argo',
+ //      move() {
+ //          console.log(`${this.name} is moving`);
+ //      },
+ //      stop() {
+ //          console.log(`${this.name} stopped`);
+ //      },
+ //  }
 
-    // const vehicle = {
-    //     name: 'Argo',
-    //     move() {
-    //         console.log(`${this.name} is moving`);
-    //     },
-    //     stop() {
-    //         console.log(`${this.name} stopped`);
-    //     },
-    // }
+ //  // console.log(vehicle);
 
-    // // console.log(vehicle);
+ //  const ship = {
+ //      age: 1,
+ //      name: 'Argo',
+ //      stopMachine() {
+ //          this.stop();
+ //          console.log(`${this.name} lifting anchor down`);
 
-    // const ship = {
+ //      },
+ //      startMachine() {
 
+ //          console.log(`${this.name} lifting anchor up`);
+ //          this.move();
+ //      },
+ //      __proto__: vehicle,
+ //  };
 
-    //     stopMachine() {
-    //         this.stop();
-    //         console.log(`${this.name} lifting anchor down`);
-
-    //     },
-    //     startMachine() {
-
-    //         console.log(`${this.name} lifting anchor up`);
-    //         this.move();
-    //     },
-    //     __proto__: vehicle,
-    // };
-
-    // getOwnProps(ship);
+ //  console.log(getOwnProps(ship));
