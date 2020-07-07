@@ -12,7 +12,7 @@ export const vehicle = {
 
 export const ship = {
 
-    hasWheels: false,
+
     stopMachine() {
         console.log(`${this.name} lifting anchor down`);
 
@@ -22,4 +22,4 @@ export const ship = {
     },
     __proto__: vehicle,
 };
-// ship.move();
+ship.move();
