@@ -8,9 +8,9 @@ export const vehicle = {
     }
 }
 
-console.log(vehicle);
+// console.log(vehicle);
 
-const ship = {
+export const ship = {
 
     hasWheels: false,
     stopMachine() {
