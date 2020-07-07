@@ -9,15 +9,13 @@ User.prototype.sayHi = function() {
 User.prototype.requestNewPhoto = function() {
     console.log(`New photo request was sent for ${this.name}`);
 };
-User.prototype.setAge = function() {
-
-    if (this.age > 0) {
-        if (this.age >= 25) {
+User.prototype.setAge = function(a) {
+    if (a < 0) return false;
+    if (a > 0) {
+        if (a >= 25) {
             return this.requestNewPhoto();
         }
         return this.age;
-    } else {
-        return false;
     }
 };
 
