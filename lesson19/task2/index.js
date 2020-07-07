@@ -1,5 +1,10 @@
 export function getOwnProps(obj) {
-    return console.log(Object.keys(obj));
+    for (let prop in obj) {
+        if (obj.hasOwnProperty(prop)) {
+            return prop;
+        }
+    }
+    // return console.log(Object.keys(obj));
 }
 
 // const vehicle = {
