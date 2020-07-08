@@ -21,15 +21,15 @@ export class Ship extends Vehicle {
 
     }
 
-    stopMachine() {
-        this.stop();
+    stop() {
+        super.stop();
         console.log(`${this.name} lifting anchor down`);
 
     }
-    startMachine() {
+    move() {
 
         console.log(`${this.name} lifting anchor up`);
-        this.move();
+        super.move();
     }
 
 };
