@@ -22,7 +22,7 @@ export class User {
     }
     static createEmpty() {
 
-        return new User(' ', null);
+        return new User('', null);
 
     }
 }
