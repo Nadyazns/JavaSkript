@@ -1,4 +1,4 @@
- class User {
+ export class User {
      constructor(id, name, sessionId) {
          this._id = id;
          this._name = name;
@@ -20,7 +20,7 @@
  user1.id = 2;
  console.log(user1);
 
- class UserRepository {
+ export class UserRepository {
      constructor(users) {
          this._users = Object.freeze(users);
      }
