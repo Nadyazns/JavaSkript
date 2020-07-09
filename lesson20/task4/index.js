@@ -1,6 +1,6 @@
 export class Order {
     constructor(price, city, type) {
-        this._id = Math.random().toString;
+        this._id = `${Math.random()}`;
         this._price = price;
         this._dateCreated = new Date;
         this._isConfirmed = false;
@@ -20,8 +20,8 @@ export class Order {
         else return false;
     }
 }
-const order1 = new Order(600, 'Kyiv');
-const order2 = new Order(1200, 'Dnepr', 'Buy');
-console.log(order1.checkPrice());
-console.log(order1);
-console.log(order1.isValidType());
+// const order1 = new Order(600, 'Kyiv');
+// const order2 = new Order(1200, 'Dnepr', 'Buy');
+// console.log(order1.checkPrice());
+// console.log(order1);
+// console.log(order1.isValidType());
