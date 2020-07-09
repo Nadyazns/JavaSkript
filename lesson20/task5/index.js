@@ -15,10 +15,10 @@
      }
  }
 
- const user1 = new User(1, 'Nadya', 'session-id');
- console.log(user1);
- user1.id = 2;
- console.log(user1);
+ //  const user1 = new User(1, 'Nadya', 'session-id');
+ //  console.log(user1);
+ //  user1.id = 2;
+ //  console.log(user1);
 
  export class UserRepository {
      constructor(users) {
@@ -39,7 +39,7 @@
  }
 
 
- const user2 = new User(200, 'Alex', 83275);
- const user3 = new User(00, 'X', 8275);
- const users = [user1, user2, user3]
- console.log(users)
+ //  const user2 = new User(200, 'Alex', 83275);
+ //  const user3 = new User(00, 'X', 8275);
+ //  const users = [user1, user2, user3]
+ //  console.log(users)
