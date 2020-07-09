@@ -8,7 +8,10 @@ export class User {
         return this._id;
     }
     get name() {
-        return this._name
+        return this._name;
+    }
+    get sessionId() {
+        return this._sessionId;
     }
 }
 
