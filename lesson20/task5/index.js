@@ -33,11 +33,7 @@ export class UserRepository {
     getUsersIds() {
         return this._users.map(i => i._id);
     }
-    getUserNameById(id) {
-        for (let user of this._users) {
-            if (user.id === id) {
-                return user.name;
-            }
-        }
+    getUserNameById(i) {
+        return this._users.find(a => a.id === i).name;
     }
 }
