@@ -22,7 +22,7 @@ export class UserRepository {
         this._users = Object.freeze(users);
     }
     get users() {
-        this._users;
+        return this._users;
     }
     getUserNames() {
         return this._users.map(i => i._name);
