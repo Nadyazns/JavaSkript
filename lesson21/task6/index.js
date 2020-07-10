@@ -1,5 +1,9 @@
-export function setButton(buttonText) {
-    return document.querySelector("body").innerHTML = buttonText;
-}
+ export function setButton(buttonText) {
 
-// console.log(setButton('ok'));
+
+     return document.querySelector('body')
+         //  .textContent = `<button>${buttonText}</button>`;
+         .innerHTML = `<button>${buttonText}</button>`;
+ }
+
+ console.log(setButton('ok'));
