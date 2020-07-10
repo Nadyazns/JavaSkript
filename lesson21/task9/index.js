@@ -13,4 +13,4 @@
      document.querySelector('ul').append(elem8);
 
  }
- finishList();
+ //  finishList();
