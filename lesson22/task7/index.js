@@ -1,6 +1,6 @@
 const button = document.querySelectorAll(".btn");
 
-const handleClick = () => {
+const handleClick = (event) => {
     console.log(event.target.textContent);
 }
 
