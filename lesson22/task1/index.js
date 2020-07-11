@@ -49,6 +49,7 @@ const clear = document.querySelector(".clear-btn");
 clear.addEventListener('click', () => {
     document.querySelector(".events-list").innerHTML = "";
 });
-
-attachHandlers.addEventListener('click', turnOn);
-removeHandlers.addEventListener('click', turnOff);
+const on = turnOn;
+attachHandlers.addEventListener('click', on);
+const off = turnOff;
+removeHandlers.addEventListener('click', off);
