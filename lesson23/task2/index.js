@@ -3,7 +3,7 @@
 // 1.генерируем 3 сектора renderArena() - [123].map ;
 // 2.генерируем строки внутри сектора getSectorLines()
 // 3.
-const generateNumbersRange = (from, to) => { // to generate lines,sectors and seats numbers
+const generateNumbersRange = (from, to) => {
     const result = [];
 
     for (let i = from; i <= to; i++) {
@@ -12,57 +12,56 @@ const generateNumbersRange = (from, to) => { // to generate lines,sectors and se
     return result;
 }
 
-
-const getLineSeats = () => generateNumbersRange(1, 10)
-    .map(seatNumber => `
-    <div
-     class="sector__seat"
-      data-seat-number="${seatNumber}"
+const getLineSeats = () => {
+    return generateNumbersRange(1, 10)
+        .map(seatNumber => `
+      <div 
+        class="sector__seat" 
+        data-seat-number="${seatNumber}"
       ></div>
-      `).join('');
-
+    `).join("");
+}
 
 const getSectorLines = () => {
-    const seatString = getLineSeats();
-
+    const seatsString = getLineSeats();
     return generateNumbersRange(1, 10)
         .map(lineNumber => `
-        <div
-         class="sector__line"
-          data-line-number="${lineNumber}"
-          >${seatString}</div>
-          `).join('');
-};
+      <div 
+        class="sector__line" 
+        data-line-number="${lineNumber}"
+      >${seatsString}</div>
+    `).join("");
+}
 
-
-const arenaElem = document.querySelector('.arena');
+const arenaElem = document.querySelector(".arena");
 
 const renderArena = () => {
     const linesString = getSectorLines();
 
     const sectorsString = generateNumbersRange(1, 3)
-        .map(sectorNumber =>
-            `<div class="sector" data-sector-number="${sectorNumber}"
-             >${linesString}</div>
-             `).join('');
-    arenaElem.innerHtml = sectorsString;
-};
+        .map(sectorNumber => `
+      <div 
+        class="sector" 
+        data-sector-number="${sectorNumber}"
+      >${linesString}</div>
+      `).join("");
+
+    arenaElem.innerHTML = sectorsString;
+}
 
 const onSeatSelect = event => {
-    const isSeat = event.target.classList.contains("sector__seat")
-    if (!isSeat) {
-        return;
-    }
+    const isSeat = event.target.classList.contains("sector__seat");
+    if (!isSeat) return;
 
     const seatNumber = event.target.dataset.seatNumber;
     const lineNumber = event.target.closest('.sector__line').dataset.lineNumber;
-    const sectorNumber = event.target.closest('.sector__line').dataset.sectorNumber;
-
+    const sectorNumber = event.target.closest('.sector').dataset.sectorNumber;
 
     const selectedSeatElem = document.querySelector('.board__selected-seat');
+
     selectedSeatElem.textContent = `S ${sectorNumber} - L ${lineNumber} - S ${seatNumber}`
 }
 
-arenaElem.addEventListener('click', onSeatSelect);
+arenaElem.addEventListener("click", onSeatSelect);
 
 renderArena();
