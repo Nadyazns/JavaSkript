@@ -34,6 +34,9 @@ const turnOn = () => {
     elemDiv.addEventListener('click', logGreenDiv);
 }
 
+turnOn();
+const attachTurnOn = turnOn;
+attachHandlers.addEventListener('click', attachTurnOn);
 
 const turnOff = () => {
     elemDiv.removeEventListener('click', logGreyDiv, true);
@@ -44,12 +47,12 @@ const turnOff = () => {
     elemP.removeEventListener('click', logGreenP);
     elemDiv.removeEventListener('click', logGreenDiv);
 }
+const removeTurnOff = turnOff;
+removeHandlers.addEventListener('click', removeTurnOff);
 
-
-
-clear.addEventListener('click', () => {
+const clearEventList = () => {
     document.querySelector(".events-list").innerHTML = "";
-});
+};
+const pushClear = clearEventList;
 
-attachHandlers.addEventListener('click', turnOn);
-removeHandlers.addEventListener('click', turnOff);
+clear.addEventListener('click', pushClear);
