@@ -1,7 +1,7 @@
-export weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'St']
+const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'St']
 
 
-export dayOfWeek = (date, days) => {
+const dayOfWeek = (date, days) => {
     const day = new Date(date).getDate();
     const dateInFuture = new Date(date).setDate(day + days);
 
@@ -11,3 +11,5 @@ export dayOfWeek = (date, days) => {
 const result = dayOfWeek(new Date(2020, 4, 25), 9);
 
 console.log((result));
+
+export { dayOfWeek }
