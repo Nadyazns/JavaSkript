@@ -4,10 +4,12 @@
 
 function getDiff(startDate, endDate) {
 
-    const diffInMs = Math.abs(startDate.getTime() - endDate.getTime());
+    const diffInMs = startDate.getTime() - endDate.getTime();
+    if (startDate.getTime() < endDate.getTime())
+        diffInMs = endtDate.getTime() - startDate.getTime();
+
 
     const seconds = Math.floor((diffInMs / 1000) % 60);
-
     const minutes = Math.floor((diffInMs / 1000 / 60) % 60);
     const hours = Math.floor((diffInMs / 60 / 60) % 24);
     const days = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
