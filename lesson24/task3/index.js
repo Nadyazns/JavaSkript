@@ -4,9 +4,9 @@
 
 function getDiff(startDate, endDate) {
 
-    const diffInMs = startDate.getTime() - endDate.getTime();
-    if (startDate.getTime() < endDate.getTime())
-        diffInMs = endtDate.getTime() - startDate.getTime();
+    const diff = new Date(startDate) - new Date(endDate);
+    if (startDate < endDate)
+        diff = new Date(endtDate) - new Date(startDate);
 
 
     const seconds = Math.floor((diffInMs / 1000) % 60);
