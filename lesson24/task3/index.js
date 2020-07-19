@@ -1,5 +1,5 @@
-const startDate = new Date(2020, 0, 1, 20, 3);
-const endDate = new Date(2020, 9, 6, 2, 20);
+// const startDate = new Date(2020, 0, 1, 20, 3);
+// const endDate = new Date(2020, 9, 6, 2, 20);
 
 
 const getDiff = (startDate, endDate) => {
@@ -20,8 +20,8 @@ const getDiff = (startDate, endDate) => {
 
 }
 
-console.log(getDiff(startDate, endDate));
-export { getDiff }
+// console.log(getDiff(startDate, endDate));
+export { getDiff };
 
 // algo
 // 1 startDate - endDate, math.abs
