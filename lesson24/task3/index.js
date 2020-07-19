@@ -2,12 +2,8 @@
 // const endDate = new Date(2020, 9, 6, 2, 20);
 
 
-function getDiff(startDate, endDate) {
-
-    const diff = new Date(startDate) - new Date(endDate);
-    if (startDate < endDate)
-        diff = new Date(endtDate) - new Date(startDate);
-
+const getDiff = (startDate, endDate) => {
+    const diffInMs = Math.abs(startDate.getTime() - endDate.getTime());
 
     const seconds = Math.floor((diffInMs / 1000) % 60);
     const minutes = Math.floor((diffInMs / 1000 / 60) % 60);
@@ -26,3 +22,4 @@ export { getDiff }
 
 // algo
 // 1 startDate - endDate, math.abs
+// 2 days,hours,mins,secs
