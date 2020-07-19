@@ -3,14 +3,11 @@
 
 
 const getDiff = (startDate, endDate) => {
-    // const diffInMs = Math.abs(startDate.getTime() - endDate.getTime());
-    let diffInMs = new Date(startDate) - new Date(endDate);
+    const diffInMs = Math.abs(startDate.getTime() - endDate.getTime());
 
-    if (startDate < endDate)
-        diffInMs = new Date(endDate) - new Date(startDate);
     const seconds = Math.floor((diffInMs / 1000) % 60);
     const minutes = Math.floor((diffInMs / 1000 / 60) % 60);
-    const hours = Math.floor((diffInMs / 60 / 60) % 24);
+    const hours = Math.floor((diffInMs / 1000 / 60 / 60) % 24);
     const days = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
     // const days = parseInt(startDate.getDate()) - parseInt(endDate.getDate());
     // const hours = parseInt((startDate.getHours()) - parseInt(endDate.getHours()) % 24);
