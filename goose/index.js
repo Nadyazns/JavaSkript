@@ -1,14 +1,8 @@
-function getSuccessRate(statistic) {
-    let percent = 0;
-    for (let i = 0; i <= statistic.length; i++) {
-        if (statistic[i]) {
-            percent = +(statistic[i]) + percent;
-            console.log(percent);
-        }
+function doublePower(currentPowers) {
 
+    for (let i = 0; i <= currentPowers.length; i++) {
+        currentPowers[i] = currentPowers[i] * 2;
     }
-    return Math.round((statistic.length / 100) * percent);
+    return currentPowers;
 }
-
-
-console.log(getSuccessRate('111111'))
+console.log(doublePower([100, 200, 3]))
