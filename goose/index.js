@@ -1,10 +1,14 @@
-const getGuestsCount = guest => {
-    guest = parseFloat(guest);
+function getSuccessRate(statistic) {
+    let percent = 0;
+    for (let i = 0; i <= statistic.length; i++) {
+        if (statistic[i]) {
+            percent = +(statistic[i]) + percent;
+            console.log(percent);
+        }
 
-    if (Object.is(guest, NaN) || guest == undefined)
-        return 'not a number';
-    else
-        return guest;
+    }
+    return Math.round((statistic.length / 100) * percent);
 }
 
-console.log(getGuestsCount('I am alone '));
+
+console.log(getSuccessRate('111111'))

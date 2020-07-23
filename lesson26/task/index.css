@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+button {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.create-event-button {
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+.navigation__today-btn {
+    margin-left: 20px;
+    padding: 5px 15px;
+}
+
+.navigation__icon-btn {
+    margin-left: 25px;
+    background: transparent;
+    border: none;
+}
+
+.calendar__header {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 60px;
+}
+
+.calendar__day-label {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.calendar__day-name {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.calendar__day-number {
+    font-size: 30px;
+    margin-top: 10px;
+}
