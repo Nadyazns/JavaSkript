@@ -21,7 +21,7 @@
 // };
 
 export const markFavorites = (tree, favorites) => {
-    const isFavorite = fav.includes(tree.id);
+    const isFavorite = favorites.includes(tree.id);
 
     return {
         ...tree,
