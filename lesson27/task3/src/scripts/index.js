@@ -11,7 +11,6 @@ const onStorageChange = (e) => {
 };
 
 window.addEventListener("storage", onStorageChange);
-v
 
 
 // const tasks = [
