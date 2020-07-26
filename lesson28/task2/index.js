@@ -20,17 +20,17 @@
 //     ],
 // };
 
-export const markFavorites = (tree, fav) => {
+export const markFavorites = (tree, favorites) => {
     const isFavorite = fav.includes(tree.id);
 
     return {
         ...tree,
         isFavorite,
-        nodes: tree.nodes.map(childNode => markFavorites(childNode, fav)),
+        nodes: tree.nodes.map(childNode => markFavorites(childNode, favorites)),
 
     }
 };
 
-const result = markFavorites(tree, fav);
+// const result = markFavorites(tree, favorites);
 
-console.log(result);
+// console.log(result);
