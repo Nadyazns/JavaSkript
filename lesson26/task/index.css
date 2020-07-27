@@ -104,3 +104,96 @@ button {
     height: 60px;
     border-bottom: 1px solid #eee;
 }
+
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(206, 201, 201, 0.911);
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal__content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.create-event {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-event__close-btn {
+    font-size: 30px;
+    transform: rotate(45deg);
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+}
+
+input,
+textarea {
+    border: none;
+}
+
+.create-event-form__field {
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.create-event-form__time {
+    margin: 50px 0;
+}
+
+.create-event-form__submit-btn {
+    float: right;
+    width: 120px;
+    padding: 10px 16px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.event {
+    font-size: 14px;
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    background-color: cornflowerblue;
+    height: 100%;
+    /*dynamic styles*/
+    border-radius: 8px;
+    top: 30px;
+    color: #fff;
+}
+
+.event__title {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

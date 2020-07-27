@@ -118,7 +118,12 @@
                     <div class="calendar__hour"></div>
                     <div class="calendar__hour"></div>
                     <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour">
+                        <div class="event">
+                            <span class="event__title">Go to the gum</span>
+                            <span class="event__time">10:00 - 12:00</span>
+                        </div>
+                    </div>
                     <div class="calendar__hour"></div>
                     <div class="calendar__hour"></div>
                     <div class="calendar__hour"></div>
@@ -257,6 +262,25 @@
             </div>
         </div>
     </section>
+
+    <div class="modal overlay hidden">
+        <div class="modal__content">
+            <div class="create-event">
+                <button class="create-event__close-btn">+</button>
+                <form action="create-event-form">
+                    <input type="text" name="title" placeholder="Title" class="create-event-form__field">
+                    <div class="create-event-form__time">
+                        <input type="date" class="create-event-form__date-field">
+                        <input type="time" class="create-event-form__date-field">
+                        <span>-</span>
+                        <input type="time" class="create-event-form__date-field">
+                    </div>
+                    <textarea name="description" placeholder="Description" class="class=" create-event-form__field></textarea>
+                    <button type="submit" class="create-event-form__submit-btn">Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 
