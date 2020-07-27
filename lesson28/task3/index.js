@@ -5,3 +5,12 @@
 // const result = add3(5);
 
 // console.log(result);
+
+
+
+export const mult = a => b => a * b;
+
+export const twice = mult(2);
+export const triple = mult(3);
+
+// console.log(mult(5)(4), twice(7), triple(9));
