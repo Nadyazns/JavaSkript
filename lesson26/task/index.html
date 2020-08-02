@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -140,6 +140,58 @@
                     <div class="calendar__hour"></div>
                 </div>
                 <div class="calendar__day">
+                    <div class="calendar__hour">
+                        <div class="event">
+                            <span class="event__title">Go to the gum</span>
+                            <span class="event__time">10:00 - 12:00</span>
+                        </div>
+                    </div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                </div>
+                <div class="calendar__day">
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                    <div class="calendar__hour"></div>
+                </div>
+                <div class="calendar__day">
                     <div class="calendar__hour"></div>
                     <div class="calendar__hour"></div>
                     <div class="calendar__hour"></div>
@@ -208,75 +260,26 @@
                     <div class="calendar__hour"></div>
                     <div class="calendar__hour"></div>
                     <div class="calendar__hour"></div>
-
-                </div>
-                <div class="calendar__day">
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-
-                </div>
-                <div class="calendar__day">
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-                    <div class="calendar__hour"></div>
-
                 </div>
 
             </div>
         </div>
     </section>
 
-    <div class="modal overlay hidden">
+    <div class="modal overlay">
         <div class="modal__content">
             <div class="create-event">
                 <button class="create-event__close-btn">+</button>
-                <form action="create-event-form">
-                    <input type="text" name="title" placeholder="Title" class="create-event-form__field">
-                    <div class="create-event-form__time">
-                        <input type="date" class="create-event-form__date-field">
-                        <input type="time" class="create-event-form__date-field">
+                <form>
+                    <input type="text" name="title" placeholder="Title" class="create-event__field">
+                    <div class="create-event__time">
+                        <input type="date" class="create-event__date-field">
+                        <input type="time" class="create-event__date-field">
                         <span>-</span>
-                        <input type="time" class="create-event-form__date-field">
+                        <input type="time" class="create-event-__date-field">
                     </div>
-                    <textarea name="description" placeholder="Description" class="class=" create-event-form__field></textarea>
-                    <button type="submit" class="create-event-form__submit-btn">Create</button>
+                    <textarea name="description" placeholder="Description" class="create-event__field"></textarea>
+                    <button type="submit" class="create-event__submit-btn">Create</button>
                 </form>
             </div>
         </div>

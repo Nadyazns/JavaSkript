@@ -1,0 +1,44 @@
+.create-event {
+    display: flex;
+    flex-direction: column;
+    // position: relative;
+    &__close-btn {
+        // position: absolute;
+        font-size: 30px;
+        height: 24px;
+        width: 24px;
+        transform: rotate(45deg);
+        background: transparent;
+        outline: none;
+        border: none;
+        margin-left: auto;
+        // top: -15px;
+        // right: -10px;
+        cursor: pointer;
+    }
+    &__field {
+        width: 90%;
+        margin-top: 20px;
+    }
+    &__time {
+        margin: 50px 0;
+    }
+    &__submit-btn {
+        float: right;
+        width: 120px;
+        padding: 10px 16px;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+    & input,
+    textarea {
+        border: none;
+    }
+    & textarea {
+        height: 100px;
+        resize: none;
+    }
+}
